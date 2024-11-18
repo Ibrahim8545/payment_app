@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:paymentapp/core/utlis/styles.dart';
 
 class CustomButtom extends StatelessWidget {
-  CustomButtom({super.key});
+  CustomButtom({super.key, this.onTap});
   void Function()? onTap;
   @override
   Widget build(BuildContext context) {

@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:paymentapp/core/widget/custum_buttom.dart';
+import 'package:paymentapp/features/presentation/checkout/views/paymnet_details.dart';
 import 'package:paymentapp/features/presentation/checkout/views/widget/order_info.dart';
 import 'package:paymentapp/features/presentation/checkout/views/widget/total_price_widget.dart';
 
@@ -48,7 +49,11 @@ class MyCartViewBody extends StatelessWidget {
           const SizedBox(
             height: 16,
           ),
-          CustomButtom()
+          CustomButtom(
+            onTap: () {
+              Navigator.pushNamed(context, PaymnetDetailsView.routeName);
+            },
+          )
         ],
       ),
     );
