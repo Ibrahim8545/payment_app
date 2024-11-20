@@ -14,10 +14,10 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       routes: {
-        PaymnetDetailsView.routeName: (context) => PaymnetDetailsView(),
+        PaymnetDetailsView.routeName: (context) => const PaymnetDetailsView(),
       },
       debugShowCheckedModeBanner: false,
-      home: MyCartView(),
+      home: const MyCartView(),
     );
   }
 }
