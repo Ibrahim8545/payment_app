@@ -14,7 +14,7 @@ class MyCartViewBody extends StatelessWidget {
       child: Column(
         children: [
           const SizedBox(
-            height: 18,
+            height: 20,
           ),
           Image.asset('assets/images/Group 6.png'),
           const SizedBox(
